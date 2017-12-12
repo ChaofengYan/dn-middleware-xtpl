@@ -1,0 +1,19 @@
+init:
+  - name: pkginfo
+
+dev:
+  - name: $local
+    location: ./lib/index.js
+    source: ./test/index.xtpl
+    target: ./index.xtpl
+    watch: ./test/*.(xtpl|vm)
+    scope: $require ../test/mock.js
+
+test:
+  - name: lint
+  
+publish:
+  - name: shell
+    script:
+      - dn test
+      - npm pu

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta name="charset" content="utf-8" />
+<title>{{title}}</title>
+{{{block ("head")}}}
+</head>
+<body>
+{{{include ("./header")}}}
+{{{block ("body")}}}
+
+{{#if($page.env === 'development')}}
+<div id="stageaa">1212</div>
+{{/if}}
+
+{{include('./test.vm')}}
+
+#set($0,'10')
+
+</body>
+</html>
