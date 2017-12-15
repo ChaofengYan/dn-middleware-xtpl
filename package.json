@@ -1,6 +1,6 @@
 {
   "name": "dn-middleware-xtpl",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mkdirp": "^0.5.1",
     "xtemplate": "^4.6.1",
     "xtpl": "^3.3.0"
-  }
+  },
+  "_from": "dn-middleware-xtpl@0.0.3",
+  "_resolved": "http://registry.npm.alibaba-inc.com/dn-middleware-xtpl/download/dn-middleware-xtpl-0.0.3.tgz"
 }
